@@ -1,0 +1,18 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build colisor.c",
+      "type": "shell",
+      "command": "gcc",
+      "args": [
+        "colisor.c",
+        "-o", "colisor",
+        "-lraylib", "-lGL", "-lm", "-lpthread", "-ldl", "-lrt", "-lX11"
+      ],
+      "group": "build",
+      "problemMatcher": ["$gcc"],
+      "detail"
+    }
+  ]
+}
